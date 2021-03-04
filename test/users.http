@@ -1,0 +1,29 @@
+### get all users
+GET http://localhost:4000/users
+
+### register new user
+POST http://localhost:4000/users
+Content-Type: application/json
+
+{
+    "firstName":"Ben",
+    "lastName":"Mizrahi",
+    "email":"benm88@gmail.com",
+    "password":"123456",
+    "address":"colorado USA",
+    "phone":"0548584875",
+    "isAdmin":true
+}
+
+### sign in user
+POST http://localhost:4000/users/sign-in
+Content-Type: application/json
+
+{
+    "email":"jonni@email.com",
+    "password":"123456"
+}
+
+
+### get user by id
+GET http://localhost:4000/users/get-user/603c9f83522e1712db4be905
