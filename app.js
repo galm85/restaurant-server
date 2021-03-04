@@ -14,7 +14,7 @@ const jobsRoute = require('./routes/jobs.route');
 
 
 //connect to mongoDB
-mongoose.connect('mongodb+srv://gal:1234@myrestapi.creen.mongodb.net/restaurant?retryWrites=true&w=majority',{
+mongoose.connect(process.env.MONGO_URI,{
     useNewUrlParser:true,
     useUnifiedTopology:true,
     useFindAndModify:false
